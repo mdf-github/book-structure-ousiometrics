@@ -1,0 +1,17 @@
+# Core requirements
+numpy>=1.5
+scipy>1.0.0
+matplotlib>=1.1.0
+pyyaml>=5.1
+pandas
+# Non-essential developer requirements
+setuptools>=41.0.1
+flake8
+sphinx_gallery
+sphinx_rtd_theme
+sphinx_bootstrap_theme
+numpydoc
+coverage
+pytest
+pytest-cov
+recommonmark

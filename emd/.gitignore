@@ -1,0 +1,11 @@
+*.pyc
+*.swo
+*.swp
+*.egg-info
+.vscode
+.coverage
+.DS_Store
+build
+doc/build
+doc/source/changelog.md
+doc/source/emd_tutorials/

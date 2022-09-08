@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+}
+
+html,body {
+  min-height: 100%;
+}
+
+
+.reference.download{ background: #f2ebed; border: #FFFFFF}
+
+.reference.download:hover {
+  background-color: #ffebed;
+}
+
+
+.function{ background-color: #f7f5fa; padding: 15px; border-radius: 20px }
+.sig-name { padding: 0px}
+.sig-prename { padding: 0px}
+
+
+.installbar {
+    margin: 11px;
+}
+
+.toggle .header {
+    display: flex;
+    clear: both;
+    background: #E6E6FA;
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0px;
+}
+
+.installbody {
+    float: left;
+}
+
+.toggle .header:before{
+    content: " +     ";
+    margin: 12px;
+    font-size: 20px;
+}
+
+.toggle .header.open:before{
+    content: " -     ";
+    margin: 12px;
+    font-size: 20px;
+}
+
+
+.myfoot {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: 0;
+    min-height: 35px;
+}

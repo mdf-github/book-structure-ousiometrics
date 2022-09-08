@@ -1,0 +1,82 @@
+include:
+  - template: 'Workflows/MergeRequest-Pipelines.gitlab-ci.yml'
+
+before_script:
+  - apt update
+  - apt upgrade -q -y
+  - pip install .[full]
+
+stages:
+  - build
+
+build35:
+  stage: build
+  image: python:3.6
+  script:
+    - flake8
+    - make all-clean
+    - make test
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
+
+build36:
+  stage: build
+  image: python:3.6
+  script:
+    - flake8
+    - make all-clean
+    - make test
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
+
+build37:
+  stage: build
+  image: python:3.7
+  script:
+    - flake8
+    - make all-clean
+    - make test
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
+
+build38:
+  stage: build
+  image: python:3.8
+  script:
+    - flake8
+    - make all-clean
+    - make test
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
+
+build39:
+  stage: build
+  image: python:3.9
+  script:
+    - flake8
+    - make all-clean
+    - make test
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
+
+build39:
+  stage: build
+  image: python:3.9
+  script:
+    - flake8
+    - make all-clean
+    - make test
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
