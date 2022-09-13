@@ -1,4 +1,4 @@
-# Generating data for "Characterizing narrative time in books through fluctuations in power and danger arcs"<sup>[[1]](#1)</sup>
+# Generating data for "Characterizing narrative time in books through fluctuations in power and danger arcs"
 
 ### Installing a conda environment
 
@@ -22,7 +22,7 @@ We want to remove the headers of the files from Gutenberg. Assuming the download
 
 `python cleanup_gutenberg_headers.py $SRCDIR_ORIG $SRCDIR_CLEAN`
 
-For the demonstration, we use `./demo/gutenberg_txt` as `$SRCDIR_ORIG` and `./demo/gutenberg_txt_clean` as `$SRCDIR_CLEAN`. The file `cleanup_gutenberg_headers.py` was adapted from the code in [[2]](#1).
+For the demonstration, we use `./demo/gutenberg_txt` as `$SRCDIR_ORIG` and `./demo/gutenberg_txt_clean` as `$SRCDIR_CLEAN`. The file `cleanup_gutenberg_headers.py` was adapted from the code in [[1]](#1).
 
 ### Generating the time series
 
@@ -44,7 +44,7 @@ Note that new subfolders inside `./outputdir` are generated automatically.
 
 ### Generating the IMFs
 
-To compute for the IMFs, the `emd` module [[3]](#1) has to be installed from the folder in this repo. This is because the `ensemble_sift` function was modified to allow for a seed as a keyword argument.
+To compute for the IMFs, the `emd` module [[2]](#1) has to be installed from the folder in this repo. This is because the `ensemble_sift` function was modified to allow for a seed as a keyword argument.
 
 To install the modified `emd` module:
 
@@ -63,10 +63,7 @@ The output subdirectories `hht/` and `imf/` containing the HHT and IMF-related f
 **References**
 
 <a id="1">[1]</a> 
-M.I. Fudolig, T. Alshaabi, K. Cramer, C.M. Danforth, and P.S. Dodds. (2022). “Characterizing narrative time in books through fluctuations in power and danger arcs,” https://arxiv.org/abs/2208.09496.
-
-<a id="2">[2]</a> 
 Gerlach, M., & Font-Clos, F. (2020). A standardized Project Gutenberg corpus for statistical analysis of natural language and quantitative linguistics. Entropy, 22(1), 126. (Code in https://github.com/pgcorpus/gutenberg)
 
-<a id="3">[3]</a> 
+<a id="2">[2]</a> 
 https://emd.readthedocs.io/en/v0.4.0/
