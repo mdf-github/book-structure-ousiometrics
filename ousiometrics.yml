@@ -1,0 +1,6 @@
+name: ousiometrics
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+prefix: /users/m/f/mfudolig/miniconda3/envs/ousiometrics

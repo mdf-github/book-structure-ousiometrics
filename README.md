@@ -5,7 +5,7 @@
 Clone this repo into your machine. Open a terminal in the folder containing all the downloaded repo files, and create a conda environment (which we name `ousiometrics`) using
 
 ```
-conda create --name ousiometrics --file requirements.txt
+conda env create -f ousiometrics.yml
 conda activate ousiometrics
 ```
 
